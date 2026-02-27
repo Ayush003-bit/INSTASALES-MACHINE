@@ -202,28 +202,82 @@
 
 <body id="top" class="bg-white text-slate-800 antialiased w-full overflow-x-hidden">
 
-    <!-- Top Sticky Bar -->
+    
 
     <div
-    id=""
     class="sticky top-0 z-50 bg-emerald-950 text-white text-xs md:text-sm py-3 text-center font-medium tracking-wide">
 
     <span class="flex flex-wrap items-center justify-center gap-2 px-4 font-montserrat leading-normal">
 
-       
-        <!-- 3 DAYS WORKSHOP -->
-        <a href="https://razorpay.com/payment-link/plink_SILnHbZRg2OE7q" target="_blank" class="inline-flex items-center gap-2 whitespace-nowrap hover:underline">
+        <!-- GET FREE REEL -->
+        <button 
+          onclick="openModal()"
+          class="inline-flex items-center gap-2 whitespace-nowrap hover:underline">
 
-          <span class="underline animate-bounce px-[10] py-[10] bg-purple-500 rounded-md mt-3">GET FREE</span>
-         REEL STRATEGIES TO CONVERT THE CLIENTS
-
-        </a>
-
-       
-       
+          <span class="underline animate-bounce px-[10] py-[10] bg-purple-500 rounded-md mt-3">
+            GET FREE
+          </span>
+          REEL STRATEGIES TO CONVERT THE CLIENTS
+        </button>
 
     </span>
 </div>
+
+
+
+<!-- Modal -->
+<div id="leadModal" 
+     class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+
+  <div class="bg-white rounded-xl w-[90%] md:w-[400px] p-6 relative">
+
+    <!-- Close Button -->
+    <button onclick="closeModal()" 
+            class="absolute top-3 right-3 text-gray-500 text-xl">
+      ✕
+    </button>
+
+    <h2 class="text-xl font-bold mb-4 text-center">
+      Get Free Reel Strategies
+    </h2>
+
+    <form id="leadForm" class="space-y-4">
+
+      <input 
+        type="text" 
+        placeholder="Your Name"
+        required
+        class="w-full border p-2 rounded-md" />
+
+      <input 
+        type="tel" 
+        placeholder="Phone Number"
+        required
+        class="w-full border p-2 rounded-md" />
+
+      <input 
+        type="text" 
+        placeholder="Your Business"
+        required
+        class="w-full border p-2 rounded-md" />
+
+      <button 
+        type="submit"
+        class="w-full bg-emerald-600 text-white py-2 rounded-md hover:bg-emerald-700">
+        Download PDF
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+
+
+
+   
 
    
     <!-- Hero Section -->
@@ -253,9 +307,9 @@
                 <!-- Left: Portrait & Social Proof -->
                 <div class="flex flex-col items-center w-full">
                     <div class="relative w-64 h-64 md:w-80 md:h-80 mb-6 max-w-full shrink-0">
-                        <div class="border-teal-950 border-2 rounded-full absolute top-0 right-0 bottom-0 left-0"></div>
-                        <img src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1771999791/ProfileCircle_liew92.png"
-                            alt="Tulika Arora" class="w-full h-full object-cover rounded-full p-1 bg-white shadow-xl">
+                        <div class=" rounded-full absolute top-0 right-0 bottom-0 left-0"></div>
+                        <img src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1772158934/TulikaMam-NewPic_jh9b7q.jpg"
+                            alt="Tulika Arora" class="w-full h-full object-cover rounded-xl p-1 bg-white shadow-xl">
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 font-poppins text-center">Tulika Arora Dhawan</h3>
                     <h3 class="text-base font-thin text-slate-900 font-poppins mb-4 text-center">Personal Branding &amp;
@@ -716,7 +770,7 @@
 
             <div class="text-center mt-12">
                 <button onclick="window.location.href='https://razorpay.com/payment-link/plink_SILnHbZRg2OE7q'"
-                    class="bg-purple-600 hover:shadow-xl hover:scale-[1.02]  hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex gap-2 text-lg font-bold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center">
+                    class="bg-purple-600 hover:shadow-xl hover:scale-[1.02]  hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex gap-2 text-lg font-bold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center animate-bounce">
                       <style>
                             @keyframes shaking {
 
@@ -738,7 +792,7 @@
                                 }
                             }
                             </style>
-                     I Want This Strategy Before Another Month Is Wasted
+                     Let’s Grow Now
 
                 
                 
@@ -822,7 +876,7 @@
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                         <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <p class="font-medium text-slate-700 font-poppins">Home Chefs, Bakers, Cafes
+                    <p class="font-medium text-slate-700 font-poppins">Home Chefs, Bakers, Cafes Owners
 </p>
                 </div>
 
@@ -848,7 +902,7 @@
 
             <div class="mt-12 text-center">
                 <button onclick="window.location.href='https://razorpay.com/payment-link/plink_SILnHbZRg2OE7q'"
-                    class=" bg-purple-600 hover:shadow-xl hover:scale-[1.02]  hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex text-lg font-bold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center">
+                    class=" bg-purple-600 hover:shadow-xl hover:scale-[1.02]  hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex text-lg font-bold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center animate-bounce">
                     <style>
                             @keyframes shaking {
 
@@ -870,8 +924,8 @@
                                 }
                             }
                             </style>
-                             YES,
-                             I AM SERIOUS ABOUT GROWTH</button>
+                            
+                             Level Me Up</button>
             </div>
 
 
@@ -1481,7 +1535,7 @@ Only a limited number of sessions are opened each week.
                         </svg>
                     </div>
                     <h4 class="font-bold text-slate-900 font-poppins mb-2">"Real stories. Real restarts"</h4>
-                    <p class="text-sm text-slate-600 font-poppins text-center mb-5">I finally understood what converts. Inquiries started within weeks.</p>
+                    <p class="text-sm text-slate-600 font-poppins text-center mb-5">Tulika helps me to understood what converts. Inquiries started within weeks.</p>
                     <p class="text-sm font-bold text-slate-900 font-poppins"> Fashion Brand Owner
                     </p>
                     
@@ -1526,7 +1580,7 @@ Only a limited number of sessions are opened each week.
                         </svg>
                     </div>
                     <h4 class="font-bold text-slate-900 font-poppins mb-2">"Spreading light in my life."</h4>
-                    <p class="text-sm text-slate-600 font-poppins mb-4">The reel scripts were gold. I stopped overthinking and started selling.
+                    <p class="text-sm text-slate-600 font-poppins mb-4">Tulika reel scripts were gold. I stopped overthinking and started selling.
                         </p>
                     <p class="text-sm font-bold text-slate-900 font-poppins">Therapist & Coach</p>
                 </div>
@@ -1570,7 +1624,7 @@ Only a limited number of sessions are opened each week.
                         </svg>
                     </div>
                     <h4 class="font-bold text-slate-900 font-poppins mb-2">"Self confidence increased."</h4>
-                    <p class="text-sm text-slate-600 font-poppins mb-4">This session gave me more clarity than any course.</p>
+                    <p class="text-sm text-slate-600 font-poppins mb-4">Her session gave me more clarity than any course.</p>
                     <span class="text-sm font-bold text-slate-900 font-poppins">Event Planner
                   </span>
                 </div>
@@ -1912,7 +1966,7 @@ Only a limited number of sessions are opened each week.
 
             <div class="mt-12 text-center">
                 <button onclick="window.location.href='https://razorpay.com/payment-link/plink_SILnHbZRg2OE7q'"
-                    class="bg-purple-600 hover:shadow-xl hover:scale-[1.02] hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex text-lg font-semibold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center">
+                    class="bg-purple-600 hover:shadow-xl hover:scale-[1.02] hover:animate-[shaking_0.3s_ease-in-out_infinite] transition-all transform inline-flex text-lg font-semibold text-white font-poppins rounded-full py-4 px-8 md:px-12 shadow-lg gap-x-2 gap-y-2 items-center max-w-full whitespace-normal text-center animate-bounce">
                      <style>
                             @keyframes shaking {
 
@@ -1956,26 +2010,16 @@ Only a limited number of sessions are opened each week.
     <a href="https://wa.me/919792007909"
        target="_blank"
        aria-label="Chat on WhatsApp"
-       class="group w-12 h-12 flex items-center justify-center rounded-full bg-green-500 shadow-lg hover:scale-110 transition-all">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white"
-            class="w-6 h-6">
+       class="group w-16 h-16  flex items-center justify-center rounded-full bg-white shadow-lg hover:scale-110 transition-all md:mb-10 mb-20 ml-5">
+        <img src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1772161485/whatsaap-icon_nscixk.png" viewBox="0 0 32 32" fill="white"
+            class="w-10 h-10">
             <path
                 d="M19.11 17.19c-.28-.14-1.64-.81-1.89-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.09-.16.18-.32.21-.6.07-.28-.14-1.19-.44-2.26-1.4-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.04-.35-.02-.49-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.49.07-.74.35-.25.28-.97.95-.97 2.31s1 2.67 1.14 2.85c.14.18 1.97 3.01 4.77 4.22.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.64-.67 1.87-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32zM16.02 3C9.39 3 4 8.39 4 15.02c0 2.64.86 5.07 2.31 7.03L4 29l7.16-2.25a11.94 11.94 0 0 0 4.86 1.03c6.63 0 12.02-5.39 12.02-12.02C28.04 8.39 22.65 3 16.02 3z" />
-        </svg>
+</img>
     </a>
    
 
-    <!-- Call -->
-
-    <a href="tel:+919580484413"
-       aria-label="Call Now"
-       class="group w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 shadow-lg hover:scale-110 transition-all">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
-            class="w-6 h-6">
-            <path
-                d="M6.62 10.79a15.09 15.09 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1v3.61a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1h3.61a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.25 1.05z" />
-        </svg>
-    </a>
+   
   
 
     <!-- Scroll to Top -->
@@ -1991,15 +2035,15 @@ Only a limited number of sessions are opened each week.
     </button>  -->
 
 
-     <a href="#top" 
-        class="group w-12 mb-20 h-12 flex items-center justify-center rounded-full bg-purple-600 shadow-lg hover:scale-110 transition-all">
+        <a href="#top" 
+        class="group w-12 mb-20 h-12 flex items-center justify-center rounded-full bg-purple-600 shadow-lg hover:scale-110 transition-all hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
             class="w-6 h-6">
             <path d="M12 4l-8 8h5v8h6v-8h5z" />
         </svg>
     </a>
 
-</div>
+</div>     
 
 
 
@@ -2046,10 +2090,10 @@ Only a limited number of sessions are opened each week.
                font-semibold text-indigo-600
                shadow-md transition-all duration-300
                hover:scale-105 hover:bg-gray-100
-               whitespace-nowrap"
+               whitespace-nowrap animate-bounce"
         aria-label="Pay Now with Razorpay"
       >
-       Business Consult Now
+       Accelerate My Business
         <svg
           class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
           fill="none"
@@ -2076,7 +2120,7 @@ Only a limited number of sessions are opened each week.
    
 
     <!-- Footer -->
-    <footer class="bg-slate-50 border-t border-slate-200 py-8 text-center text-slate-500 text-xs px-4 md:mb-10 lg:mb-10 mb-16">
+    <footer class="bg-slate-50 border-t border-slate-200 py-8 text-center text-slate-500 text-xs px-4 md:mb-10 mb-12">
         <p class="font-poppins">© 2023 Tulika Arora. All rights reserved.</p>
         <div class="flex flex-wrap justify-center gap-4 mt-2 mb-6">
             <a href="#" class="hover:underline font-poppins">Privacy Policy</a>
@@ -2223,6 +2267,62 @@ const countdownDate = new Date();
     minutesEl.textContent = minutes.toString().padStart(2, "0");
     secondsEl.textContent = seconds.toString().padStart(2, "0");
   }, 1000);
+
+
+
+
+  
+
+const pdfLink = "Document/3-REEL-CONVERTING-SCRIPTS.pdf";
+
+// 👉 Put your WhatsApp number here (with country code, no +, no spaces)
+const ownerWhatsAppNumber = "919792007909"; 
+
+function openModal() {
+  document.getElementById("leadModal").classList.remove("hidden");
+  document.getElementById("leadModal").classList.add("flex");
+}
+
+function closeModal() {
+  document.getElementById("leadModal").classList.add("hidden");
+}
+
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const inputs = this.querySelectorAll("input");
+
+  const userName = inputs[0].value;
+  const userPhone = inputs[1].value;
+  const userBusiness = inputs[2].value;
+
+  // ✅ 1. Download PDF
+  const link = document.createElement("a");
+  link.href = pdfLink;
+  link.download = "Reel-Strategies.pdf";
+  link.click();
+
+  // ✅ 2. Create WhatsApp Message
+  const message = `New Lead Alert 🚀
+
+Name: ${userName}
+Phone: ${userPhone}
+Business: ${userBusiness}
+
+${userName} downloaded your Reel Strategies PDF.`;
+
+  const encodedMessage = encodeURIComponent(message);
+
+  // ✅ 3. Open WhatsApp Chat
+  window.open(`https://wa.me/${ownerWhatsAppNumber}?text=${encodedMessage}`, "_blank");
+
+  closeModal();
+});
+
+
+
+
+
 
 
 
